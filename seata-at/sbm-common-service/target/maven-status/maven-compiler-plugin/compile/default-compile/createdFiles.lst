@@ -1,0 +1,4 @@
+io\seata\samples\common\interceptor\SeataRestTemplateInterceptor.class
+io\seata\samples\common\SeataProperties.class
+io\seata\samples\common\config\SeataRestTemplateAutoConfiguration.class
+io\seata\samples\common\filter\SeataFilter.class

@@ -1,0 +1,7 @@
+C:\Code\seata-samples\springboot-mybatis\sbm-stock-service\src\main\java\io\seata\samples\stock\persistence\StockMapper.java
+C:\Code\seata-samples\springboot-mybatis\sbm-stock-service\src\main\java\io\seata\samples\stock\service\StockService.java
+C:\Code\seata-samples\springboot-mybatis\sbm-stock-service\src\main\java\io\seata\samples\stock\persistence\Stock.java
+C:\Code\seata-samples\springboot-mybatis\sbm-stock-service\src\main\java\io\seata\samples\stock\config\DataSourceConfig.java
+C:\Code\seata-samples\springboot-mybatis\sbm-stock-service\src\main\java\io\seata\samples\stock\config\RestTemplateConfig.java
+C:\Code\seata-samples\springboot-mybatis\sbm-stock-service\src\main\java\io\seata\samples\stock\controller\StockController.java
+C:\Code\seata-samples\springboot-mybatis\sbm-stock-service\src\main\java\io\seata\samples\stock\SpringbootMybatisStockApplication.java

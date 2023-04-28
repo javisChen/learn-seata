@@ -1,0 +1,7 @@
+io\seata\samples\stock\service\StockService.class
+io\seata\samples\stock\persistence\StockMapper.class
+io\seata\samples\stock\config\DataSourceConfig.class
+io\seata\samples\stock\controller\StockController.class
+io\seata\samples\stock\persistence\Stock.class
+io\seata\samples\stock\config\RestTemplateConfig.class
+io\seata\samples\stock\SpringbootMybatisStockApplication.class

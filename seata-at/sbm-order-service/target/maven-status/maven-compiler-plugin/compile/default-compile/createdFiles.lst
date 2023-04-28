@@ -1,0 +1,8 @@
+io\seata\samples\order\service\OrderService.class
+io\seata\samples\order\persistence\OrderMapper.class
+io\seata\samples\order\controller\OrderController.class
+io\seata\samples\order\SpringbootMybatisOrderApplication.class
+io\seata\samples\order\client\AccountClient.class
+io\seata\samples\order\persistence\Order.class
+io\seata\samples\order\config\DataSourceConfig.class
+io\seata\samples\order\config\RestTemplateConfig.class

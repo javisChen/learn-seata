@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="learn-seata" target="1.8" />
+      <module name="sbm-account-service" target="1.8" />
+      <module name="sbm-business-service" target="1.8" />
+      <module name="sbm-common-service" target="1.8" />
+      <module name="sbm-order-service" target="1.8" />
+      <module name="sbm-stock-service" target="1.8" />
+      <module name="seata-at" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
