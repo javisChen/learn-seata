@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.seata:seata-spring-boot-starter:${seata.version}">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Dev/repos/io/seata/seata-spring-boot-starter/${seata.version}/seata-spring-boot-starter-${seata.version}.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../Dev/repos/io/seata/seata-spring-boot-starter/${seata.version}/seata-spring-boot-starter-${seata.version}-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../Dev/repos/io/seata/seata-spring-boot-starter/${seata.version}/seata-spring-boot-starter-${seata.version}-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
