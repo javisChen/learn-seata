@@ -1,0 +1,11 @@
+### Send POST request with json body
+POST http://localhost:8084/api/business/purchase/test
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content"
+}
+
+###
+GET http://localhost:8082/api/order/test
