@@ -15,11 +15,17 @@
  */
 package io.seata.samples.order;
 
+import io.seata.samples.order.config.EnableSpringTest;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@SpringBootApplication(scanBasePackages = "io.seata.samples", exclude = DataSourceAutoConfiguration.class)
+@SpringBootApplication(
+        scanBasePackages = "io.seata.samples",
+        exclude = DataSourceAutoConfiguration.class)
+@EnableSpringTest
 public class SpringbootMybatisOrderApplication {
 
     public static void main(String[] args) {

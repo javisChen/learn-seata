@@ -22,6 +22,7 @@ import io.seata.samples.order.persistence.Order;
 import io.seata.samples.order.persistence.OrderMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class OrderService {
@@ -43,5 +44,19 @@ public class OrderService {
 
         accountClient.debit(userId, orderMoney);
 
+    }
+
+//    @Transactional(rollbackFor = Exception.class)
+    public void testInsert(int i) {
+        if (i == 2) {
+            throw new RuntimeException("rollback");
+        }
+        BigDecimal orderMoney = new BigDecimal(1).multiply(new BigDecimal(5));
+        Order order = new Order();
+        order.setUserId(i + "");
+        order.setCommodityCode("commodityCode");
+        order.setCount(1);
+        order.setMoney(orderMoney);
+        orderMapper.insert(order);
     }
 }

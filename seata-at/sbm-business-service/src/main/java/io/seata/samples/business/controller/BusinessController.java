@@ -56,4 +56,21 @@ public class BusinessController {
 
         return true;
     }
+
+    /**
+     * 购买下单，模拟全局事务回滚
+     *
+     * @return
+     */
+    @RequestMapping("/purchase/test")
+    public Boolean purchaseTest() {
+        try {
+            businessService.test("1002", "2001", 1);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+        return true;
+    }
 }

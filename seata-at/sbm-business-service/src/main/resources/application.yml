@@ -108,3 +108,6 @@ seata:
       connect-timeout: 2000
       username: ""
       password: ""
+spring:
+  aop:
+    auto: true

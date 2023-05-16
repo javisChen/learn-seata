@@ -15,12 +15,16 @@
  */
 package io.seata.samples.business.service;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import io.seata.core.context.RootContext;
 import io.seata.samples.business.client.OrderClient;
 import io.seata.samples.business.client.StockClient;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.aop.framework.AopContext;
+import org.springframework.aop.framework.AopProxyUtils;
+import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -46,5 +50,14 @@ public class BusinessService {
         LOGGER.info("purchase begin ... xid: " + RootContext.getXID());
         stockClient.deduct(commodityCode, orderCount);
         orderClient.create(userId, commodityCode, orderCount);
+    }
+
+    public void test(String s, String s1, int i) {
+        System.out.println("test");
+        ((BusinessService) AopContext.currentProxy()).test2();
+    }
+
+    public void test2() {
+        System.out.println("test2");
     }
 }

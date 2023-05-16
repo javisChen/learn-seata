@@ -1,4 +1,3 @@
-io\seata\samples\stock\service\StockService.class
 io\seata\samples\stock\persistence\StockMapper.class
 io\seata\samples\stock\config\DataSourceConfig.class
 io\seata\samples\stock\controller\StockController.class

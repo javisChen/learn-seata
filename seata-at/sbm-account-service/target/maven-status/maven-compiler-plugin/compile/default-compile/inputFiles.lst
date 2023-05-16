@@ -1,7 +1,7 @@
-C:\Code\seata-samples\springboot-mybatis\sbm-account-service\src\main\java\io\seata\samples\account\config\DataSourceConfig.java
-C:\Code\seata-samples\springboot-mybatis\sbm-account-service\src\main\java\io\seata\samples\account\service\AccountService.java
-C:\Code\seata-samples\springboot-mybatis\sbm-account-service\src\main\java\io\seata\samples\account\config\RestTemplateConfig.java
-C:\Code\seata-samples\springboot-mybatis\sbm-account-service\src\main\java\io\seata\samples\account\SpringbootMybatisAccountApplication.java
-C:\Code\seata-samples\springboot-mybatis\sbm-account-service\src\main\java\io\seata\samples\account\controller\AccountController.java
-C:\Code\seata-samples\springboot-mybatis\sbm-account-service\src\main\java\io\seata\samples\account\persistence\Account.java
-C:\Code\seata-samples\springboot-mybatis\sbm-account-service\src\main\java\io\seata\samples\account\persistence\AccountMapper.java
+C:\Code\learn-seata\seata-at\sbm-account-service\src\main\java\io\seata\samples\account\config\RestTemplateConfig.java
+C:\Code\learn-seata\seata-at\sbm-account-service\src\main\java\io\seata\samples\account\config\DataSourceConfig.java
+C:\Code\learn-seata\seata-at\sbm-account-service\src\main\java\io\seata\samples\account\controller\AccountController.java
+C:\Code\learn-seata\seata-at\sbm-account-service\src\main\java\io\seata\samples\account\persistence\AccountMapper.java
+C:\Code\learn-seata\seata-at\sbm-account-service\src\main\java\io\seata\samples\account\persistence\Account.java
+C:\Code\learn-seata\seata-at\sbm-account-service\src\main\java\io\seata\samples\account\service\AccountService.java
+C:\Code\learn-seata\seata-at\sbm-account-service\src\main\java\io\seata\samples\account\SpringbootMybatisAccountApplication.java

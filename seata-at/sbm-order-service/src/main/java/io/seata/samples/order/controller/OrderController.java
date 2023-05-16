@@ -16,24 +16,52 @@
 package io.seata.samples.order.controller;
 
 import io.seata.core.context.RootContext;
+import io.seata.samples.common.config.User;
 import io.seata.samples.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
+import org.springframework.transaction.support.DefaultTransactionDefinition;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.Serializable;
+
 @RequestMapping("/api/order")
 @RestController
-public class OrderController {
+public class OrderController implements Serializable {
 
     @Autowired
     OrderService orderService;
+
+    @Autowired
+    private User user;
+
+    @Autowired
+    private PlatformTransactionManager platformTransactionManager;
 
     @GetMapping(value = "/debit")
     public void debit(@RequestParam String userId, @RequestParam String commodityCode, @RequestParam Integer count) {
         System.out.println("order XID " + RootContext.getXID());
         orderService.create(userId, commodityCode, count);
+    }
+
+    @GetMapping(value = "/test")
+    public void test() {
+        TransactionStatus transaction = platformTransactionManager.getTransaction(null);
+        try {
+            for (int i = 0; i < 5; i++) {
+                orderService.testInsert(i);
+            }
+            platformTransactionManager.commit(transaction);
+        } catch (Exception e) {
+            TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();
+            platformTransactionManager.rollback(transaction);
+        }
     }
 
 }

@@ -18,7 +18,12 @@ package io.seata.samples.business;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
+@EnableAspectJAutoProxy(
+        exposeProxy = true,
+        proxyTargetClass = false
+)
 @SpringBootApplication(scanBasePackages = "io.seata.samples", exclude = DataSourceAutoConfiguration.class)
 public class SpringbootMybatisBusinessApplication {
 
